@@ -3,7 +3,7 @@
     "description": "用于对比测试环境和生产环境页面的一致性",
     "environment1": {
         "name": "测试环境泳道",
-        "domain": "https://kwai-ui.corp.kuaishou.com",
+        "domain": "",
         "headers": {
             "trace-context": {
                 "laneId": "STAGING.opt_666_menu"
@@ -14,7 +14,7 @@
     },
     "environment2": {
         "name": "测试环境主干",
-        "domain": "https://kwai-ui.corp.kuaishou.com",
+        "domain": "",
         "headers": {
             "trace-context": {
                 "laneId": "main"
