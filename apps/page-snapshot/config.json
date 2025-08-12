@@ -1,0 +1,13 @@
+{
+    "domain": "https://stg-666.staging.kuaishou.com",
+    "cookie": "",
+    "headers": {
+        "trace-context": {
+            "laneId": "STAGING.opt_666_menu"
+        }
+    },
+    "paths": ["/live-anchor/exception-monitor","/live-anchor/transfer/in","/live-portal","/live-statistics","/live-statistics/anchor","/live-statistics/monitoring","/live-statistics/noauthorized","/live-statistics/party-play/author-data","/live-statistics/party-play/large-market","/live-statistics/party-play/live-monitor","/live-statistics/realtime-data","/live-statistics/report","/live-statistics/video/author-data","/live-statistics/video/large-market","/live-statistics/video/live-review","/live-anchor","/live-anchor/apply","/live-promotion","/live-promotion/anchor/promote","/live-promotion/resource/spark","/live-promotion/resource/spark/deliveryDiagnose","/live-setup","/live-setup/employee/create/administrator","/live-setup/employee/create/employee","/live-setup/employee/create/employee/group","/live-setup/employee/manage","/live-statistics/barrage","/live-statistics/barrage/authorData","/live-statistics/barrage/largeMarket","/live-statistics/barrage/liveWatch","/live-statistics/grid-live","/live-statistics/grid-live/authorData","/live-statistics/grid-live/largeMarket","/live-statistics/grid-live/liveReview","/live-statistics/grid-live/rankingList","/live-statistics/rank","/live-statistics/revenue","/live-statistics/settlement","/settlement","/settlement/invoice","/settlement/list/live"],
+    "query": {
+        "cancelDtask": 1
+    }
+}

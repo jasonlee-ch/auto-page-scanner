@@ -1,0 +1,17 @@
+{
+  "name": "page-snapshot",
+  "version": "1.0.0",
+  "description": "页面自动截图",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "screenshot": "node index.js --config config.json",
+    "screenshot:firefox": "node index.js --browser firefox",
+    "screenshot:webkit": "node index.js --browser webkit",
+    "screenshot:all-browsers": "npm run scan:chromium && npm run scan:firefox && npm run scan:webkit",
+    "screenshot:chromium": "node index.js --browser chromium",
+    "screenshot:local": "node index.js --config config.local.json"
+  },
+  "author": "lijiajun",
+  "license": "ISC"
+}

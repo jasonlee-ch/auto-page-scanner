@@ -1,0 +1,19 @@
+{
+  "name": "auto-scan-page-server",
+  "version": "0.0.1",
+  "description": "基于playwright的页面自动截图和对比工具",
+  "author": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "install-browsers": "npx playwright install"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0"
+  },
+  "devDependencies": {
+    "path": "^0.12.7",
+    "prettier": "^3.4.2",
+    "fs": "0.0.1-security"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "page-compare",
+  "version": "1.0.0",
+  "description": "页面相似度对比截图",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "compare": "./run-compare-with-server.sh",
+    "compare-local": "./run-compare-with-server.sh --config config.local.json"
+  },
+  "keywords": [
+    "playwright",
+    "similarity"
+  ],
+  "author": "lijiajun",
+  "license": "ISC"
+}

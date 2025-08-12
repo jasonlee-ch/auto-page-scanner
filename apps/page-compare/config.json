@@ -1,0 +1,69 @@
+{
+    "name": "DOM页面一致性对比配置",
+    "description": "用于对比测试环境和生产环境页面的一致性",
+    "environment1": {
+        "name": "测试环境泳道",
+        "domain": "https://kwai-ui.corp.kuaishou.com",
+        "headers": {
+            "trace-context": {
+                "laneId": "STAGING.opt_666_menu"
+            }
+        },
+        "query": {
+        }
+    },
+    "environment2": {
+        "name": "测试环境主干",
+        "domain": "https://kwai-ui.corp.kuaishou.com",
+        "headers": {
+            "trace-context": {
+                "laneId": "main"
+            }
+        }
+    },
+    "paths": [
+        "/v4/#/zh-CN/component/button",
+        "/v4/#/zh-CN/component/datetime-picker"
+    ],
+    "domCompare": {
+        "rootSelectors": [
+            ".page-component__content"
+        ],
+        "ignoreSelectors": [
+            ".timestamp",
+            ".ad-banner",
+            ".user-avatar",
+            ".live-count",
+            ".real-time-data",
+            "[data-testid=\"dynamic\"]",
+            ".loading-spinner",
+            ".toast-message",
+            ".user-info",
+            ".notification"
+        ],
+        "thresholds": {
+            "structure": 1,
+            "text": 1,
+            "overall": 1
+        },
+        "outputDOMStructure": false,
+        "enableScreenshot": true,
+        "screenshotOnlyOnFailure": true,
+        "screenshotOptions": {
+            "viewport": {
+                "width": 1440,
+                "height": 900
+            }
+        }
+    },
+    "options": {
+        "browserTypes": [
+            "chromium"
+        ],
+        "timeout": 60000,
+        "concurrent": true,
+        "saveResults": true,
+        "outputPath": "./dom-compare-results.json",
+        "generateReport": true
+    }
+}
